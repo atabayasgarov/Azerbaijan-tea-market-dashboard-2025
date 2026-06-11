@@ -1003,7 +1003,7 @@ with tab4:
 
     render_styled_table(
         map_df[["Region", "Sahə (ha)", "Məhsul (ton)", "pH Uyğunluq", "Kritiklik", "Potensial (2030)", "Əsas Problem"]]
-        .style.applymap(
+        .style.map(
             lambda v: f"color: {color_map.get(v, '#000')}; font-weight:600",
             subset=["Kritiklik"]
         )
